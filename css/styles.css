@@ -49,6 +49,7 @@
 .photos pre {
   height: 590px;
   font-size: 20px;
+  padding-top: 50px;
 }
 
 .photos .carousel-control {
@@ -72,6 +73,7 @@ h3 {
 .poems pre {
   height: 640px;
   font-size: 20px;
+  padding-top: 50px;
 }
 
 p {
