@@ -1,5 +1,5 @@
-function Heart(a,width,height) {
-  this.img = a.loadImage('elements/background/images/heart.png');
+function Heart(img,a,width,height) {
+  this.img = img;
   this.x = a.random(0,width);
   this.y = a.random(-500,-50);
   this.yspeed = a.random(3,7);

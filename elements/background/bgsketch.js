@@ -1,13 +1,18 @@
 //background of whole site
 var canvas1 = function(b) {
   var h =[];
+  var img;
+  b.preload = function() {
+    img = b.loadImage('elements/background/images/heart.png');
+  }
+
   b.setup = function() {
     var canvasDiv = document.getElementById('background');
     width = canvasDiv.offsetWidth;
     height = canvasDiv.offsetHeight;
     var canvas = b.createCanvas(width,height).style('z-index','-10');
     for(var i=0;i<150;i++) {
-      h.push(new Heart(b,width,height));
+      h.push(new Heart(img,b,width,height));
     }
   };
 
