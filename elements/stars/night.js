@@ -4,15 +4,12 @@ var canvas2 = function(a) {
   var width,height;
   var img;
 
-  a.preload = function() {
-    img = a.loadImage("images/azkac.png");
-  }
-
   a.setup = function() {
     var canvasDiv = document.getElementById('night');
     width = canvasDiv.offsetWidth;
     height = 500;
     a.createCanvas(width,height).style('border-radius', '5px');
+    img = a.loadImage("images/azkac.png");
     for(var i=0;i<200;i++) {
       var x = a.random(0,width);
       var y = a.random(0,height);
