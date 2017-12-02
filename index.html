@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>surprise</title>
+
+    <!--<link rel="prefetch" href="images/first-5.png">
+    <link rel="prefetch" href="images/second-5.png">
+    <link rel="prefetch" href="images/fourth-5.png">
+    <link rel="prefetch" href="images/sixth-5.png">
+    <link rel="prefetch" href="images/eight-5.png">
+    <link rel="prefetch" href="images/ten-5.png">
+    <link rel="prefetch" href="images/eleven-5.png">
+    <link rel="prefetch" href="images/third/third-32.png">
+    <link rel="prefetch" href="images/third/third-20.png">
+    <link rel="prefetch" href="images/third/third-16.png">
+    <link rel="prefetch" href="images/third/third-10.png">
+    <link rel="prefetch" href="images/third/third-5.png">-->
+
+    <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+
+    <script src="js/p5.js" type="text/javascript"></script>
+    <script src="js/p5.dom.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="elements/background/background.js" type="text/javascript"></script>
+    <script src="elements/background/bgsketch.js" type="text/javascript"></script>
+    <script src="elements/sketch.js" type="text/javascript"></script>
+    <script src="elements/stars/star.js" type="text/javascript"></script>
+    <script src="elements/stars/night.js" type="text/javascript"></script>
+    <script src="elements/stars/moon.js" type="text/javascript"></script>
+    <script src="elements/fireworks/particle.js" type="text/javascript"></script>
+    <script src="elements/fireworks/firework.js" type="text/javascript"></script>
+    <script src="elements/fireworks/fwsketch.js" type="text/javascript"></script>
+    <script src="elements/title/title.js" type="text/javascript"></script>
+    <script src="elements/introduction/introduction.js" type="text/javascript"></script>
+    <script src="elements/quotes/quotes.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <!--whole body background-->
+    <div id="background">
+    </div>
+
+    <!--title-->
+    <div class="container title">
+        <h1 id="heading"></h1>
+    </div>
+
+    <!--introduction-->
+    <div class="container introduction">
+        <p id="intro">LETS START!!!! <br/> Click "NEXT" please(Be independent!! :-p)</p>
+        <button class="btn" id="prev-btn" onclick="introPrev()">PREV</button>
+        <button class="btn" id="next-btn" onclick="introNext()">NEXT</button>
+    </div>
+
+    <!--poems-->
+    <div class="container poems">
+      <div class="carousel slide" data-interval="false" id="featured">
+        <div class="carousel-inner">
+          <div class="item active">
+              <pre>
+                Remember the very first time you sent me a poem and
+                I was so happy to know that you can write poems.
+                And I liked your poem so much that I saved it with me.
+                After that day you have written so many poems and I still have every one of them..
+                So here are the beautiful poems by AZKA..
+              </pre>
+          </div>
+          <div class="item">
+            <pre>
+              I miss those good old  days,
+              where every confusion had it's way;
+              Where it was fun  to be with people,
+              to laugh off all the pains like a riddle;
+              Where every problem was solved with care,
+              for which now i got nobody to share;
+              Where problem's were just a mere one night stand,
+              people played all of it away like member's of a band;
+              Where laughter was echoed through one's eyes
+              which now, is used to disguise all the lies;
+              The simple meaning of words, those days had
+              are now turned into metaphors used to depict the hidden land of the sad.
+            </pre>
+          </div>
+          <div class="item">
+            <pre>
+              People say i am so weak at heart
+              but for me, this has become a part;
+              a part of my heart, my soul, my mind;
+              their grubby words have made me blind..
+              blind from who i actually am;
+              the door of their words straight on me slams.
+              They never skipped a moment to show me down
+              always greeting me with a smile disguised from a frown.
+              They always could find the flaws in me
+              but never cud find the happinesss i lost in the sea,
+              sea full of their mordant grudges deep
+              refraining me from sound sleep;
+              but now their words have made me strong,
+              paying no heed I'll live my life long.!
+            </pre>
+          </div>
+          <div class="item">
+            <pre>
+              There he walks all joly nd fine
+              wondering where he would take his girl to dine
+              To make it a perfect surprise he wishes
+              but amongst all the wondering what he misses
+              Is how sparks flew when the girl saw him
+              he was the shining light in the surrounding all dim
+              how eagerly she waited for the touch of his hand
+              how the smile of his face was all she would demand
+              how the happiness in his eyes would shine so bright
+              making her heart beat at the speed of light
+              amongst his effort of making evrythng perfect
+              he could not see how his mere presence made it's own effect!
+            </pre>
+          </div>
+          <div class="item">
+            <pre>
+              What is it in a mother so captivating yet concealed?
+              Thought the irresolute boy who was yet a fragile seed.
+              The responsibilities of life were nevver his concern,
+              and so mother nature thought of giving it a turn;
+              Took from him his highly esteemed possession,
+              That's when he found the answer to his previous question.
+              He was drowned in the pain flowing deep down his vein
+              Such catastrophe were not for which he was trained
+              The rage and anger made him question the creator:
+              "Have you no heart? Are you just a fat proud piece of a traitor!?"
+              And then day by day the flame started burning a little lighter
+              untill suddenly evverything started looking brighter!
+              Hope and Peace he found disguised as a young girl,
+              A perfect blend of wisdom and weirdness was what made him swirl.
+              He had found something he never thought of was a need,
+              Named her an angel not matching any of the globes breed.
+              Everyday he started smiling a bit wider,
+              knowing he could not have found a better guider:
+              And there above, the proud creator smiled
+              knowing he answered another question of the boy so blind.
+            </pre>
+          </div>
+          <div class="item">
+            <pre>
+              A sister is like an ocean with an appealing and calm surface
+              Dive into mine, and you'll find treasures layed with all grace!
+              The exhaustion of the day and the drowsiness of the night
+              Takes quite a turn when she comes into sight.
+              In the age of 3am friends she is the one who rides the day
+              always ready to join you is what makes me slay
+              A child hidden in her heart won't let her disguise
+              the happiness of small joys that blinks through her iridescent eyes
+              Shopping exploring dreaming: to all your desires
+              She'll accompany you all along to the end of an umpire
+              In this world full of fakeness she'll be the one to entrust
+              May the rain of success pour over her and drain all the dust
+              And to the world i proudly say
+              She's MY sister and I am her's come what may!
+            </pre>
+          </div>
+          <div class="item">
+            <pre>
+              I wish i were the moon
+              In a calm night sky dipped in blue
+              Would hide from all the goons
+              And never return till the dew
+              Ah! I won't be seen again anytime soon.
+
+              I wish i were a bat
+              On a tree, hanging toe to head
+              Sleeping all day without regret
+              To wake to a peaceful world: your night as it's said
+              Ah! I've got no lives to please with an act.
+
+              I wish i were a shooting star
+              Only visible to some few
+              Would fall and get expectations at par
+              Even if away my life was what I threw.
+              Ah! I've got no promises to carry with for far.
+
+              I wish i were anything but me
+              The scars underneath for long have been
+              The burden of hopes from which I'd be free
+              The ocean of cries nowhere to be seen
+              Ah! It's won't be a sin to finally breathe.
+            </pre>
+          </div>
+          <div class="item">
+            <pre><center>That last one was heavyy....
+              But I like your poems they are beautiful and simple and soooooo truthful..
+              So.. Lets move onto the next section..!!
+            </center></pre>
+          </div>
+        </div><!--carousel-inner-->
+
+        <a class="left carousel-control" href="#featured" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#featured" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+      </div><!--carousel-->
+    </div>
+
+    <!--quotes-->
+    <div class="container quotes">
+      <p id="quotes">Click "NEXT" pleeeaaassee!!</p>
+      <button class="btn" id="prev-btn" onclick="quotePrev()">PREV</button>
+      <button class="btn" id="next-btn" onclick="quoteNext()">NEXT</button>
+    </div>
+
+    <!--night-->
+		<div class="container moon">
+			<div id="night">
+			</div>
+      <h3 id="moon"></h3>
+	  </div>
+
+    <!--fireworks-->
+    <div class="container fireworks">
+			<div id="fireworks">
+			</div>
+      <h3>HHHHUUUUURRRRRAAAYYYYYY... HAPPY BIRTHDAY!!!! <br/>Ps. you can scroll down after u r done watching..
+      </h3>
+	  </div>
+
+    <!--photos-->
+    <div class="container photos">
+      <div class="carousel slide" data-interval="false" id="photos">
+        <div class="carousel-inner">
+          <div class="item active">
+            <pre>
+              Now I have made this following pics with your pics.
+              Confused?? You will get it when you see it or I will just explain you later..
+              So continue...
+            </pre>
+          </div>
+          <div class="item">
+            <center><img src="images/first-5.png" alt="first"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/second-5.png" alt="second"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/fourth-5.png" alt="fourth"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/sixth-5.png" alt="sixth"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/eight-5.png" alt="eight"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/ten-5.png" alt="ten"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/eleven-5.png" alt="eleven"></center>
+          </div>
+          <div class="item">
+            <pre>
+              Now if you still didn't get it..
+              I will show you how this pics are made of your pics.
+              Next are the examples in which I started with the
+              large pixels and have decresed its size until I got
+              a pic worth looking..
+              So go on...
+            </pre>
+          </div>
+          <div class="item">
+            <center><img src="images/third/third-32.png" alt="third-32"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/third/third-20.png" alt="third-20"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/third/third-16.png" alt="third-16"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/third/third-10.png" alt="third-10"></center>
+          </div>
+          <div class="item">
+            <center><img src="images/third/third-5.png" alt="third-5"></center>
+          </div>
+          <div class="item">
+            <pre>
+                SOOOOOOO!!!....
+                Impressed???....
+                I bet you loved it..!!!
+                BBBUUUTTTTT. this ain't over yet!!!
+                I still have one thing left to show you..
+                So <a href="painting/index.html" target="_blank">Click here</a> to see it..
+            </pre>
+          </div>
+        </div><!--carousel-inner-->
+
+        <a class="left carousel-control" href="#photos" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#photos" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+      </div><!--carousel-->
+    </div>
+  </body>
+</html>
