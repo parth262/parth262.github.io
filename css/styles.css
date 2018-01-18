@@ -93,12 +93,13 @@ body {
 #ayurveda-info {
   /* background-color: #7cb342; */
   height: 200px;
-}
-
-#ayurveda-info:hover {
-  /* background-color: #7cb342; */  
   overflow-y: auto;
 }
+
+/* #ayurveda-info:hover {
+  background-color: #7cb342;  
+  overflow-y: auto;
+} */
 
 .type {
   margin: 10% 20% 0 20%;
