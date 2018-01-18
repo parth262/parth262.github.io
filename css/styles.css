@@ -172,16 +172,24 @@ select:hover, input:hover {
 
 @media only screen and (max-width: 992px) {
 
-  .inverse .from, .inverse .to {
+  body {
+    font-size: 20px;
+  }
+
+  .inverse .from, .input .from {
     margin-top: 50px;
   }
 
-  .inverse .icon {
-    margin-top: 35px;
+  .inverse .to, .input .to {
+    margin-top: 20px;
+  }
+
+  .inverse .icon, .input .icon {
+    margin-top: 20px;
   }
 
   .info {
-    margin: 50px 100px;
+    margin: 50px 50px;
   }
 
 }
