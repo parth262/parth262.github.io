@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, no-store, max-age=0, private">
+    <meta http-equiv="EXPIRES" content="Mon, 22 Jul 2002 11:12:01 GMT">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Ayurvedic unit converter</title>
+
+    <!--css files-->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!--javascript files-->
+    <script src="js/script.js" type="text/javascript"></script>
+
+  </head>
+  <body>
+
+    <div id="top">
+      <div class="title">
+          <span id="sidebar_btn" role="button" onclick="toggleSidebar();" class="glyphicon glyphicon-menu-hamburger float-left"></span>
+          <h1>Ayurvedic Unit Converter</h1>
+      </div><!--title-->
+
+      <div id="sidebar">
+        <div id="sidebar-header">
+            <span role="button" onclick="toggleSidebar();" class="glyphicon glyphicon-chevron-left"></span>
+            <h3>AUC LOGO</h3>
+        </div>
+        <ul id="sidebar-options">
+          <li id="weight" onclick="changeType(this.id);"><span class="glyphicon glyphicon-scale"></span>Weight and measures</li>
+          <li id="length" onclick="changeType(this.id);"><span class="glyphicon glyphicon-pencil"></span>Length</li>
+          <li id="time" onclick="changeType(this.id);"><span class="glyphicon glyphicon-time"></span>Time</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="below">
+      <div class="main">
+        <div class="container">
+
+          <div id="info-card">
+            <div id="ayurveda-info" class="scrollbar-deep-purple">
+              <h1>Ayurveda:</h1>
+              <p>Ayurveda is a system of medicine with historical roots in the Indian subcontinent. Globalized and modernized practices derived from Ayurveda traditions are a type of complementary or alternative medicine. In countries beyond India, Ayurveda therapies and practices have been integrated in general wellness applications and in some cases in medical use.The main classical Ayurveda texts begin with accounts of the transmission of medical knowledge from the Gods to sages, and then to human physicians</p>
+            </div>
+          </div>
+
+          <div>
+            <center><h3>Selected measurement type: <span id="type">None</span></h3></center>
+          </div>
+          <div class="row">
+
+              <div class="input center col-md-12 col-xs-6">
+
+                  <div class="from col-md-5">
+                      <input type="text" name="from_values" onkeyup="inputChanged(this.value)">
+                    </div><!--input from-->
+                    
+                    <div class="icon col-md-2">
+                      <h1>=</h1>
+                    </div><!--input icon-->
+            
+                    <div class="to col-md-5">
+                        <input id="output" type="text" name="to_values">
+                    </div><!--input to-->
+      
+              </div><!--input-->
+      
+              <div class="inverse col-md-12 col-xs-6">
+                  <div class="from col-md-5">
+                      <select name="from_unit" id="from_unit">
+                          <option value="select" selected disabled hidden>Select unit</option>
+                      </select>
+                    </div><!--input from-->
+                    
+                    <div class="icon col-md-2">
+                      <h1><span class="glyphicon">&#xe120;</span></h1>
+                    </div><!--input icon-->
+            
+                    <div class="to col-md-5">
+                        <select name="to_unit" id="to_unit">
+                            <option value="select" selected disabled hidden>Select unit</option>
+                        </select>
+                    </div><!--input to-->
+              </div><!--inverse-->
+
+          </div>
+
+          <div class="info">
+            <div id="unit-info" class="scrollbar-deep-purple">
+              <h3>Information</h3>
+              <h4>paramanu</h4>
+                <p>
+                    Hey there just testing stuff. paramanu is an ayurvedic unit for measuring weight. Hey there just testing stuff. paramanu is an ayurvedic unit for measuring weight. Hey there just testing stuff. paramanu is an ayurvedic unit for measuring weight.
+                </p>
+              </div>
+          </div>
+
+        </div><!--container-->
+      </div><!--main-->
+    </div>
+  </body>
+</html>
