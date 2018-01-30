@@ -29,7 +29,7 @@ body {
   top: 0;
   left: -260px;
   z-index: 10;
-  background-color: #ffffffcc;
+  background-color: #ffffff;
   box-shadow: 3px 0px 5px black;
   transition: left 0.3s ease-in-out;
 }
@@ -41,7 +41,7 @@ body {
 #sidebar-header {
   width: auto;
   height: 200px;
-  background-color: #004d40bb;
+  background-color: #004d40;
   padding: 5px;
   color: #ffffff;
   text-align: center;
